@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - Instituto Franklin Delano Roosevelt</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0; /* Color de fondo general */
+        }
+        header {
+            background-color: #4CAF50; /* Fondo del encabezado */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenido principal */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin: 20px 0;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        footer {
+            background-color: #333; /* Fondo oscuro para el pie de página */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .floating-label {
+            position: relative;
+            margin: 20px 0;
+        }
+        .floating-label input,
+        .floating-label textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border 0.3s;
+        }
+        .floating-label label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #aaa;
+            transition: 0.2s;
+        }
+        .floating-label input:focus,
+        .floating-label textarea:focus {
+            border-color: #af744c;
+        }
+        .floating-label input:focus + label,
+        .floating-label textarea:focus + label,
+        .floating-label input:not(:placeholder-shown) + label,
+        .floating-label textarea:not(:placeholder-shown) + label {
+            top: -10px;
+            left: 10px;
+            color: #4CAF50;
+            font-size: 12px;
+        }
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-button:hover {
+            background-color: #45a049; /* Color más oscuro en hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Instituto Franklin Delano Roosevelt</h1>
+        <nav>
+            <ul>
+                <li><a href="FDR.html">Inicio</a></li>
+                <li><a href="Carreras.html">Ofertas Académicas</a></li>
+                <li><a href="Acercade.html">Inscripciones</a></li>
+                <li><a href="Promojeff.html">Promoción 2024</a></li>
+                <li><a href="Instalaciones.html">Instalaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Quiénes Somos</h2>
+            <p>
+                Somos una institución comprometida con la excelencia académica y el desarrollo integral de nuestros estudiantes.
+            </p>
+
+            <h2>Formulario de Contacto</h2>
+            <form action="mailto:alexmejia.10.fdr@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <div class="floating-label">
+                    <input type="text" id="nombre" name="nombre" placeholder=" " required>
+                    <label for="nombre">Nombre Completo</label>
+                </div>
+
+                <div class="floating-label">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Correo Electrónico</label>
+                </div>
+
+                <div class="floating-label">
+                    <textarea id="mensaje" name="mensaje" placeholder=" " required></textarea>
+                    <label for="mensaje">Tu Mensaje</label>
+                </div>
+
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Instituto Franklin Delano Roosevelt - Puerto Cortés, Honduras</p>
+    </footer>
+</body>
+</html>
